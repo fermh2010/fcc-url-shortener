@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/fermh2010/fcc-url-shortener#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "short-mongo-id": "^0.1.1",
+    "valid-url": "^1.0.9"
   }
 }
