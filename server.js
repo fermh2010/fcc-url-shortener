@@ -5,6 +5,8 @@ const shortMongoId = require('short-mongo-id');
 
 const db_url = 'mongodb://localhost:27017/database';
 
+console.log("environment = " + app.get('env'));
+
 app.set('port', process.env.PORT || 8080);
 
 app.get('/new/*', function(req, res, next) {
