@@ -3,7 +3,7 @@ const app = express();
 const mongo = require('mongodb').MongoClient;
 const shortMongoId = require('short-mongo-id');
 
-const db_url = 'mongodb://localhost:27017/database';
+const db_url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/database';
 
 console.log("environment = " + app.get('env'));
 
